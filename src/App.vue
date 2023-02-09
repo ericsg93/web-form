@@ -1,13 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <SignUpForm/>
 </template>
 
 <script>
+import SignUpForm from './components/SignUpForm.vue';
 export default {
-  name: 'App',
-  components: {
-  }
-}
+  name: "App",
+  components: {SignUpForm},
+};
 </script>
 
 <style>
@@ -18,5 +18,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body {
+  margin: 0;
+  background: #eee;
 }
 </style>
